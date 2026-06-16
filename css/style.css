@@ -229,7 +229,12 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 64px;
-  align-items: start;
+  align-items: center;
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-copy h2 {
@@ -275,13 +280,23 @@ a { color: inherit; text-decoration: none; }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .photo-slot {
-  height: 160px;
+  height: 210px;
   border-radius: 2px;
+}
+
+.photo-grid .photo-slot {
+  height: auto;
+  min-height: 0;
+}
+
+.photo-grid .photo-slot img {
+  height: auto;
+  object-fit: contain;
 }
 
 .photo-slot.tall {

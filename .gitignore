@@ -1,0 +1,7 @@
+# Raw source photos / videos (working originals, not used by the live site)
+Website Contents/
+Two years in moments/
+
+# Backup and local tooling files
+*.bak
+.claude/
